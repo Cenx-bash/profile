@@ -1,1 +1,108 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>Developer Portfolio</title> <link rel="stylesheet" href="style.css"> <!-- Lucide icons --> <script src="https://unpkg.com/lucide@latest"></script> </head> <body> <div class="portfolio"> <!-- Left Sidebar --> <aside class="sidebar"> <div class="avatar"> <i data-lucide="code"></i> </div> <div class="nav-dots"> <span title="About"></span> <span class="active" title="Projects"></span> <span title="Skills"></span> <span title="Experience"></span> <span title="Contact"></span> <span title="Resume"></span> </div> <div class="socials"> <a href="#"><i data-lucide="github"></i></a> <a href="#"><i data-lucide="linkedin"></i></a> <a href="#"><i data-lucide="mail"></i></a> </div> </aside> <!-- Main content --> <main> <!-- Left Panel --> <section class="left-panel"> <div class="intro"> <div class="role">FULL STACK DEVELOPER</div> <h1>Elevate Your<br><span>DIGITAL</span></h1> <div class="location">San Francisco, CA</div> </div> <!-- Project Info --> <div class="project-info"> <div class="category" id="project-category"></div> <div class="rating" id="project-rating"></div> <h2 id="project-name"></h2> <p id="project-description"></p> <div class="tech" id="project-tech"></div> </div> <!-- Links --> <div class="project-links"> <a id="github-link" class="btn primary"><i data-lucide="github"></i> View Code</a> <a id="live-link" class="btn secondary"><i data-lucide="external-link"></i> Live Demo</a> </div> <!-- Navigation --> <div class="project-nav"> <button id="prev-btn"><i data-lucide="chevron-left"></i></button> <div class="dots" id="project-dots"></div> <button id="next-btn"><i data-lucide="chevron-right"></i></button> </div> </section> <!-- Center Panel --> <section class="center-panel"> <div class="project-display"> <div class="mockup"> <div class="screen"> <div class="top-bar"> <span></span><span></span><span></span> </div> <div class="screen-content"></div> </div> <div class="year" id="project-year"></div> </div> </div> </section> <!-- Right Panel --> <section class="right-panel"> <div class="skills"> <h3>CORE SKILLS</h3> <div id="skills-list"></div> </div> <div class="experience"> <h3>EXPERIENCE</h3> <p><strong>Senior Developer</strong><br>Tech Startup • 2022-Present</p> <p><strong>Full Stack Developer</strong><br>Agency • 2020-2022</p> </div> <div class="contact"> <h3>GET IN TOUCH</h3> <a href="mailto:hello@example.com"><i data-lucide="mail"></i> hello@example.com</a> <button class="btn download"><i data-lucide="download"></i> Download Resume</button> </div> <div class="status"> <span class="dot"></span> Available for projects </div> </section> </main> </div> <script src="script.js"></script> <script>lucide.createIcons();</script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="portfolio">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="avatar">
+        <i data-lucide="code"></i>
+      </div>
+      <div class="nav-dots">
+        <span title="About"></span>
+        <span class="active" title="Projects"></span>
+        <span title="Skills"></span>
+        <span title="Experience"></span>
+        <span title="Contact"></span>
+        <span title="Resume"></span>
+      </div>
+      <div class="socials">
+        <a href="#"><i data-lucide="github"></i></a>
+        <a href="#"><i data-lucide="linkedin"></i></a>
+        <a href="#"><i data-lucide="mail"></i></a>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main>
+      <!-- Left Panel -->
+      <section class="left-panel">
+        <div class="intro">
+          <div class="role">FULL STACK DEVELOPER</div>
+          <h1>Elevate Your<br><span>DIGITAL</span></h1>
+          <div class="location">San Francisco, CA</div>
+        </div>
+
+        <!-- Project Info -->
+        <div class="project-info">
+          <div class="category" id="project-category"></div>
+          <div class="rating" id="project-rating"></div>
+          <h2 id="project-name"></h2>
+          <p id="project-description"></p>
+          <div class="tech" id="project-tech"></div>
+        </div>
+
+        <!-- Links -->
+        <div class="project-links">
+          <a id="github-link" class="btn primary"><i data-lucide="github"></i> View Code</a>
+          <a id="live-link" class="btn secondary"><i data-lucide="external-link"></i> Live Demo</a>
+        </div>
+
+        <!-- Navigation -->
+        <div class="project-nav">
+          <button id="prev-btn"><i data-lucide="chevron-left"></i></button>
+          <div class="dots" id="project-dots"></div>
+          <button id="next-btn"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </section>
+
+      <!-- Center Panel -->
+      <section class="center-panel">
+        <div class="project-display">
+          <div class="mockup">
+            <div class="screen">
+              <div class="top-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="screen-content"></div>
+            </div>
+            <div class="year" id="project-year"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Panel -->
+      <section class="right-panel">
+        <div class="skills">
+          <h3>CORE SKILLS</h3>
+          <div id="skills-list"></div>
+        </div>
+
+        <div class="experience">
+          <h3>EXPERIENCE</h3>
+          <p><strong>Senior Developer</strong><br>Tech Startup • 2022-Present</p>
+          <p><strong>Full Stack Developer</strong><br>Agency • 2020-2022</p>
+        </div>
+
+        <div class="contact">
+          <h3>GET IN TOUCH</h3>
+          <a href="mailto:hello@example.com"><i data-lucide="mail"></i> hello@example.com</a>
+          <button class="btn download"><i data-lucide="download"></i> Download Resume</button>
+        </div>
+        <div class="status">
+          <span class="dot"></span> Available for projects
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
